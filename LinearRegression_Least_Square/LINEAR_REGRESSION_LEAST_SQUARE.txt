@@ -1,0 +1,17 @@
+# Linear Regresion
+# response = m * feature + n
+# x as feature vector, x = [x_1, x_2, …., x_n]
+# y as response vector, y = [y_1, y_2, …., y_n]
+# line that goes through data in the graph is called regression line.
+# to create our model we must find the values of m and n
+# Least Squares technique(Tehnica celor mai mici patrate aplicata pe regresia liniara)
+
+# Find the least squares line given
+x = [0,2,4,6,8,10,12]
+y = [-0.8,-1,-0.2,0.2,-0.2,0.8,-0.6]
+
+m = (n * sum(xy)- sum(x)*sum(y)) / (n*sum(x*x) - sum(x)*sum(x))
+
+b = (sum(y) - m*sum(x))/n
+
+y_pred = m*x + b
